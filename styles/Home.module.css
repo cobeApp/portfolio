@@ -1,0 +1,220 @@
+.container {
+  padding: 0px;
+  overflow: hidden;
+}
+
+.main {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.introduce_name {
+  text-align: center;
+  font-size: 128px;
+  font-weight: 720;
+}
+
+.introduce_text_1 {
+  text-align: center;
+  font-size: 64px;
+  font-weight: 480;
+
+  animation-name: principle;
+  animation-duration: 2s;
+}
+@-webkit-keyframes principle {
+  0% {
+    color: white;
+    transform: translateX(-400px);
+  }
+  100% {
+    color: black;
+  }
+}
+
+.introduce_text_2 {
+  text-align: center;
+  font-size: 64px;
+  font-weight: 480;
+
+  animation-name: and;
+  animation-duration: 2.5s;
+}
+@-webkit-keyframes and {
+  0% {
+    color: white;
+    transform: translateX(-400px);
+  }
+  100% {
+    color: black;
+  }
+}
+
+.introduce_text_3 {
+  width: 100%;
+  text-align: center;
+  font-size: 64px;
+  font-weight: 480;
+
+  animation-name: solid;
+  animation-duration: 3s;
+}
+@-webkit-keyframes solid {
+  0% {
+    color: white;
+    transform: translateX(400px);
+  }
+  100% {
+    color: black;
+  }
+}
+
+.settings {
+  display: flex;
+  width: 100%;
+  max-width: 196px;
+  padding: 12px 0px;
+  margin: 64px auto 0px auto;
+  border: 1px solid black;
+  border-radius: 12px;
+  justify-content: center;
+  font-size: 36px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/*
+*  language modal
+*/
+.modal__fullscreen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+.modal__container {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  width: 500px;
+  height: 100px;
+
+  justify-content: space-between;
+}
+
+.modal__btn {
+  width: 200px;
+  height: 70px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 1px 4.8px 0px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 70px;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+  .introduce_name {
+    text-align: center;
+    font-size: 72px;
+    font-weight: 720;
+  }
+  
+  .introduce_text_1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 480;
+  }
+  
+  .introduce_text_2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 480;
+  }
+  
+  .introduce_text_3 {
+    width: 100%;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 480;
+  }
+
+  .settings {
+    max-width: 144px;
+    padding: 8px 0px;
+    margin: 64px auto 0px auto;
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .introduce_name {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 720;
+  }
+  
+  .introduce_text_1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 480;
+  }
+  
+  .introduce_text_2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 480;
+  }
+  
+  .introduce_text_3 {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 480;
+  }
+
+  .settings {
+    max-width: 144px;
+    padding: 8px 0px;
+    margin: 48px auto 0px auto;
+    font-size: 18px;
+  }
+
+  .modal__container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 100%;
+    height: 30%;
+  
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .modal__btn {
+    width: 150px;
+    height: 70px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 1px 4.8px 0px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 70px;
+    text-align: center;
+    cursor: pointer;
+  }
+}
